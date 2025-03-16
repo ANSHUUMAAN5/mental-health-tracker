@@ -1,0 +1,69 @@
+import React from 'react';
+
+const LandingPage = () => {
+  return (
+    <div className="bg-gray-200 min-h-screen flex justify-center items-center p-4">
+      <div className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-5xl relative">
+        {/* Navbar */}
+        <nav className="flex justify-between items-center mb-8 px-4">
+          {/* Logo Banner */}
+          <div className="relative">
+            <div className="bg-indigo-400 text-white px-6 py-2 rounded-tl-xl rounded-tr-xl font-bold">
+              LOGO
+            </div>
+            <div className="absolute left-0 top-full w-0 h-0 border-t-[12px] border-l-[18px] border-r-[18px] border-indigo-400 border-transparent"></div>
+          </div>
+
+          {/* Menu */}
+          <ul className="flex space-x-6 text-gray-700 font-semibold">
+            <li className="hover:text-indigo-600 cursor-pointer">Home</li>
+            <li className="hover:text-indigo-600 cursor-pointer">About Us</li>
+            <li className="hover:text-indigo-600 cursor-pointer">Services</li>
+            <li className="hover:text-indigo-600 cursor-pointer">Contact</li>
+            <li className="hover:text-indigo-600 cursor-pointer">FAQ</li>
+          </ul>
+
+          {/* Search Button */}
+          <div className="flex items-center space-x-2">
+            <input
+              type="text"
+              placeholder="Search"
+              className="px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            />
+            <button className="bg-indigo-600 text-white px-4 py-2 rounded-lg">
+              🔍
+            </button>
+          </div>
+        </nav>
+
+        {/* Hero Section */}
+        <div className="flex flex-col md:flex-row items-center">
+          {/* Text Section */}
+          <div className="md:w-1/2 text-center md:text-left">
+            <h1 className="text-5xl font-extrabold text-gray-900">
+              Mental Health
+            </h1>
+            <p className="text-gray-600 mt-4 leading-relaxed">
+              Track your mood, gain insights, and improve your well-being with
+              our smart monitoring system.
+            </p>
+            <button className="mt-6 bg-indigo-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-indigo-700">
+              Learn More
+            </button>
+          </div>
+
+          {/* Image Section */}
+          <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+            <img
+              src="https://cdn.pixabay.com/photo/2021/02/21/06/06/mental-health-6036242_960_720.png"
+              alt="Mental Health"
+              className="w-80 drop-shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default LandingPage;
